@@ -1,1 +1,1 @@
-https://marekpapiernik.github.io/goit-markup-hw-05/
+https://marekpapiernik.github.io/goit-markup-hw-06/
