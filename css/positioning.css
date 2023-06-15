@@ -84,7 +84,7 @@ menu {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 img {
@@ -292,7 +292,7 @@ address {
   cursor: not-allowed;
   transform: scale(1);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .is-hidden {
@@ -309,12 +309,12 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   cursor: auto;
   margin: auto;
-  right: 536px;
-  left: 536px;
-  top: 221px;
+
+  left: 35%;
+  top: 20%;
 }
 
 .modal-close {
@@ -326,4 +326,141 @@ address {
   top: 8px;
   left: 91%;
   cursor: pointer;
+}
+
+/*===================== Formularz ===================*/
+/* ===== form ====*/
+.data-form {
+  padding: 0px 40px 40px 40px;
+}
+/*=== <p> formularza =======*/
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+/*=== form ====*/
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+/*==== span ===*/
+
+.form-wrap {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.form-wrap:hover,
+.form-wrap:focus-within,
+.form-input:hover,
+.form-input:focus {
+  fill: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+/* === input ====*/
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+  outline: transparent;
+}
+/*=== form icon svg ====*/
+.form-icon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+.comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+}
+.user-agreement {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+}
+.checkbox-input {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.checkbox-vector {
+  display: inline-block;
+  border: 2px solid var(--font-color);
+  border-radius: 2px;
+  vertical-align: sub;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+.vector {
+  display: block;
+  width: 16px;
+  height: 15px;
+}
+.checkbox-user-agreement {
+  display: inline;
+  margin-left: 8px;
+}
+.reg-link {
+  color: var(--brand-blue);
+  text-decoration: underline;
+}
+.checkbox-input:checked + .checkbox-vector {
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+.form-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background-color: var(--brand-blue);
+  margin: 0 auto;
+  padding: 10px 76px;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+  border-color: var(--brand-blue);
+}
+.form-submit:hover,
+.form-submit:focus {
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.06);
 }

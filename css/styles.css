@@ -8,7 +8,7 @@
   line-height: 1.6;
   font-weight: 500;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .buttons {
@@ -30,7 +30,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .buttons-one {
@@ -50,6 +50,7 @@ body {
   --icon-color: #f5f4fa;
   --icon-fill: #afb1b8;
   --footer-babckground: #2f303a;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blue {
@@ -111,7 +112,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .menu-links-two {
@@ -132,7 +133,7 @@ a {
 
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .menu-links-three {
@@ -151,7 +152,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .header-link {
@@ -174,7 +175,7 @@ a {
 
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 p1 {
@@ -248,7 +249,7 @@ p4 {
 
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .menu-index-two {
@@ -267,7 +268,7 @@ p4 {
   letter-spacing: 0.02em;
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .menu-index-three {
@@ -286,7 +287,7 @@ p4 {
   letter-spacing: 0.02em;
   color: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .header-index {
@@ -330,7 +331,7 @@ p4 {
   width: 200px;
   height: 50px;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .index-button {
@@ -435,7 +436,7 @@ li {
   fill: var(--background-color);
   border-radius: 50%;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 /* ==================== klienci ============ */
@@ -470,7 +471,7 @@ li {
   border-color: var(--brand-blue);
   fill: var(--brand-blue);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 .client-icon {
   min-width: 50%;
@@ -513,7 +514,7 @@ footer {
   background-color: var(--brand-blue);
   border-radius: 50%;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 
 .footer-icon-element {
@@ -605,7 +606,7 @@ footer {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic-bezier);
 }
 
 .overlay-div {
